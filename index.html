@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+  body {
+    font: 10px sans-serif;
+  }
+
+svg {
+  font: 10px sans-serif;
+}
+
+.background path {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.foreground path {
+  fill: none;
+  stroke: steelblue;
+}
+
+.brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+</style>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">What Determines Best Selling U.S. Movies During 2007 ~ 2010</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav" id="navbar">
+          <li id="genre_navi">
+            <a href="#genre">Genre</a>
+          </li>
+          <li id="major_studio_navi">
+            <a href="#major_studio">Major Studio</a>
+          </li>
+          <li id="budget_navi">
+            <a href="#budget">Budget</a>
+          </li>
+          <li id="score_navi">
+            <a href="#score">Score</a>
+          </li>
+
+
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class='row' id='genre'>
+          <h2>Genre's Influence</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class='row' id='major_studio'>
+      <h2>Major Studio's Influence</h2>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9" id='budget'>
+        <h2>Budget's Influence</h2>
+      </div>
+
+      <div class='col-md-3' id='budget2'>
+          <table class="table table-striped" id="movie" style = "margin-top: 200px;">
+            <tbody>
+              <tr><td>Film</td><td id="Film"></td></tr>
+              <tr><td>Major Studio</td><td id="MajorStudio"></td></tr>
+              <tr><td>Rotten Tomatoes</td><td id="RottenTomatoes"></td></tr>
+              <tr><td>Audience Score</td><td id="AudienceScore"></td></tr>
+              <tr><td>Genre</td><td id="Genre"></td></tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9" id='score'>
+        <h2>Score's Influence</h2>
+      </div>
+
+      <div class='col-md-3' id='score2'>
+          <table class="table table-striped" id="movie" style = "margin-top: 200px;">
+              <tbody>
+                <tr><td>Film</td><td id="Film2"></td></tr>
+                <tr><td>Major Studio</td><td id="MajorStudio2"></td></tr>
+                <tr><td>Budget ($m)</td><td id="Budget2"></td></tr>
+                <tr><td>Genre</td><td id="Genre2"></td></tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="d3.min.js"></script>
+  <script src="budget.js"></script>
+  <script src="score.js"></script>
+  <script src="studio.js"></script>
+  <script src="genre.js"></script>
+</body>
+</html>
