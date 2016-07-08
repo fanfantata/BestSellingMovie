@@ -1,0 +1,3 @@
+# BestSellingMovie
+What Determines Best Selling U.S. Movies During 2007 ~ 2010 based on D3.js
+The theme of our project is to discover best selling American movies' influence factors. Before doing the project, we pretreat and preanalyze data. Based on pretreatment and preanalysis of data, we make a plan to display score and budget's analysis using parallel coordinate, and display genre and major studio's analysis using scatter plot diagram. We encode the project based on d3 examples, and we change them based on our need. After implementation, we explain how to analyze data using our program. Finally, we evaluate our work. 
